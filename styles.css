@@ -1,0 +1,375 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Root Colors*/
+:root {
+    --primary-color: #FF6B6B; /* Bright Coral */
+    --secondary-color: #4ECDC4; /* Turquoise */
+    --accent-color: #F7FFF7; /* Light Mint */
+    --background-color: #1A1A1D; /* Dark Gray */
+    --text-color: #FFFFFF; /* White */
+    --section-dark: #222326; /* Slightly lighter black for contrast */
+  --section-highlight: #2E4057; /* Deep blue-gray for a modern touch */
+  --section-alt: #3A4750; /* Muted dark blue for variation */
+  }
+
+  body{
+    background-color: var(--background-color);
+    font-family: "JetBrains Mono", serif;
+  }
+  
+
+/* Header */
+header{
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 400px;
+
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+a:hover{
+    color: var(--primary-color);
+    transition: 0.5s ease;
+
+}
+/*Intro*/
+
+#intro-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    color: var(--text-color);
+    
+}
+.intro-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+#hello{
+    font-size: 5rem;
+    text-align: center;
+}
+
+#profile-pic{
+    width: 500px;
+    border-radius: 20%;
+    margin-right: 2rem;
+    box-shadow: 0px 4px 10px var(--primary-color), 
+                0px 0px 15px var(--secondary-color);
+                transition: box-shadow 0.6s ease-in-out;
+
+}
+#profile-pic:hover{
+    box-shadow: 0px 4px 25px var(--primary-color), 
+                0px 0px 25px var(--secondary-color);
+                
+
+}
+
+#intro-para{
+padding: 2rem;
+}
+
+/*Socials*/
+.socials {
+    display: flex;
+    gap: 3rem;
+
+  }
+  
+  .socials a {
+    font-size: 2.4rem;
+    color: var(--text-color); 
+    transition: color 0.2s ease;
+  }
+  
+  .socials a:hover {
+    color: var(--primary-color);
+  }
+
+
+/* About Me Section*/
+
+#about-me-section{
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    margin-top: 9rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--section-alt);
+}
+.about-me-h1{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.about-me-txt{
+    width: 80%;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+/*Project Section*/
+
+#projects{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects-intro{
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+#project-title{
+    color: var(--text-color);
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+#project-thumb{
+    width: 250px;
+    border-radius: 10%;
+}
+
+
+.project-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding: 2rem;
+    margin: 2rem;
+    
+    border-radius: 0.5rem;
+    background-color: var(--section-dark);
+}
+.project-img-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-text-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-description{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    width: 80%;
+}
+.links{
+    margin-top: 4rem;
+    color: var(--text-color);
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    text-decoration: underline;
+    
+}
+#links{
+    background-color: var(--section-highlight);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+/*Projects Outro*/
+
+#project-h2{
+font-size: 2rem;
+color: var(--text-color);
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+
+
+/* Responsivess for mobile */
+@media (max-width: 768px) {
+
+    /* Header */
+header{
+    
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+}
+
+
+
+ /*Intro*/
+#intro-section{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--text-color);
+ 
+    
+}
+#profile-pic, img{
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+    background-color: red;
+    border-radius: 20%;
+    box-shadow: 0px 4px 10px var(--primary-color), 
+                0px 0px 15px var(--secondary-color);
+                transition: box-shadow 0.6s ease-in-out;         
+
+}
+
+#hello{
+    display: none; 
+}
+#intro-para{
+    padding: 1rem;
+}
+
+  .intro-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+.socials {
+    display: flex;
+    gap: 2rem;
+    margin: 1rem;
+
+  }
+
+.about-me-h1{
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+}
+
+.about-me-txt{
+    width: 100%;
+    text-align: center;
+   
+}
+
+/*Project Section*/
+
+#projects{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects-intro{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#project-title{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+#project-thumb{
+    width: 200px;
+    border-radius: 10%;
+    margin-bottom: 2rem;
+}
+
+
+.project-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--section-dark);
+}
+
+
+.project-text-wrap{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.project-description{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    width: 80%;
+}
+.links{
+    margin-top: 2rem;
+    color: var(--text-color);
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    text-decoration: underline;
+    
+}
+#links{
+    background-color: var(--section-highlight);
+    width: 250px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+/*Projects Outro*/
+
+#project-h2{
+font-size: 1.2rem;
+color: var(--text-color);
+text-align: center;
+margin-bottom: 2rem;
+}
+}
